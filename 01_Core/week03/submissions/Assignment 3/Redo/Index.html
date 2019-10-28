@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 3</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+      .container 
+      {
+          display:block;
+          position: relative;
+      }
+      
+      .interior
+      {
+          
+      }
+      
+      .div1
+      {
+          display: inline-block;
+          position: absolute;
+          top: 40px;
+          left:40px;
+          height: 200px;
+          width:200px;
+          background-color: blue;
+          
+      }
+      
+      
+      .div1:after
+      {
+          display: block;
+          content:"";
+          height: 200px;
+          width:200px;
+          background-color: blue;
+          transform: translate(240px, 0px);
+      }
+      
+      .div2
+      {
+          position: absolute;
+          top: 280px;
+          left:40px;
+          height: 200px;
+          width:200px;
+          background-color: blue;
+      }
+      
+      .div2::after
+      {
+          display: block;
+          content:"";
+          height: 200px;
+          width:200px;
+          background-color: blue;
+          transform: translate(240px, 0px);
+      }
+      
+      .div3
+      {
+          height: 200px;
+          width: 200px;
+          background-color: red;
+          transform: translate(160px, 160px) rotate(45deg);
+      }
+      
+      .div4
+      {
+          height: 60px;
+          width: 60px;
+          background-color: white;
+          border-radius: 50%;
+          transform: translate(230px, 30px);
+      }
+      
+      .div5
+      {
+          margin: 50px 0;
+          position: relative;
+          display: block;
+          color: red;
+          width: 0px;
+          height: 0px;
+          border-right: 100px solid transparent;
+          border-bottom: 70px solid black;
+          border-left: 100px solid transparent;
+          transform: translate(160px, -85px) rotate(35deg) scale(0.15, 0.15);
+      }
+      
+      .div5:before
+      {
+          border-bottom: 80px solid black;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          position: absolute;
+          height: 0;
+          width: 0;
+          top: -45px;
+          left: -65px;
+          display: block;
+          content: '';
+          transform: rotate(-35deg);
+      }
+      
+      .div5:after
+      {
+          position: absolute;
+          display: block;
+          color: red;
+          top: 3px;
+          left: -105px;
+          width: 0px;
+          height: 0px;
+          border-right: 100px solid transparent;
+          border-bottom: 70px solid black;
+          border-left: 100px solid transparent;
+          transform: rotate(-70deg);
+          content: '';
+      }
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>

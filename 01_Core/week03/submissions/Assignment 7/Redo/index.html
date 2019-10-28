@@ -1,0 +1,204 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 7</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+      .container
+      {
+          position: relative;
+      }
+      
+      
+      .div1
+      {
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          height: 100px;
+          width: 100px;
+          background-color: red;
+          transform: translate(360px, 0px);
+          
+      }
+      
+      .div1:before
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: red;
+          opacity: 0.7;
+          transform: translate(-120px, 0px);
+          
+      }
+      
+      .div1:after
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: red;
+          transform: translate(-240px, -105px);
+          opacity: 0.3;
+          
+          
+      }
+      
+      .div2
+      {
+        position: absolute;
+          top: 160px;
+          left: 40px;
+          height: 100px;
+          width: 100px;
+          background-color: orange;
+          transform: translate(360px, 0px);
+      }
+      
+      .div2:before
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: orange;
+          opacity: 0.7;
+          transform: translate(-120px, 0px);
+      }
+      
+      .div2:after
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: orange;
+          transform: translate(-240px, -105px);
+          opacity: 0.3;
+      }
+      
+      .div3
+      {
+          position: absolute;
+          top: 280px;
+          left: 40px;
+          height: 100px;
+          width: 100px;
+          background-color: yellow;
+          transform: translate(360px, 0px);
+      }
+      
+      .div3:before
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: yellow;
+          opacity: 0.7;
+          transform: translate(-120px, 0px);
+      }
+      
+      .div3:after
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: yellow;
+          transform: translate(-240px, -105px);
+          opacity: 0.3;
+      }
+      
+      .div4
+      {
+          position: absolute;
+          top: 400px;
+          left: 40px;
+          height: 100px;
+          width: 100px;
+          background-color: blue;
+          transform: translate(360px, 0px);
+      }
+      
+      .div4:before
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: blue;
+          opacity: 0.7;
+          transform: translate(-120px, 0px);
+      }
+      
+      .div4:after
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: blue;
+          transform: translate(-240px, -105px);
+          opacity: 0.3;
+      }
+      
+      .div5
+      {
+          position: absolute;
+          top: 520px;
+          left: 40px;
+          height: 100px;
+          width: 100px;
+          background-color: violet;
+          transform: translate(360px, 0px);
+      }
+      
+      .div5:before
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: violet;
+          opacity: 0.7;
+          transform: translate(-120px, 0px);
+      }
+      
+      .div5:after
+      {
+          display: inline-block;
+          content:"";
+          height:100px;
+          width:100px;
+          background-color: violet;
+          transform: translate(-240px, -105px);
+          opacity: 0.3;
+      }
+      .interior
+      {
+         
+      }
+      
+  	
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>
