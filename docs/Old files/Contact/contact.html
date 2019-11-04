@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Info</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="contactscript.js"></script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav" class="clearfix">
+        <a href="../index.html" class="active">Home</a>
+        <a href="../Rainbow/rainbow.html">Rainbow</a>
+        <a href="#contact">Contact</a>
+    <div class="dropdown">
+    <button class="dropbtn">Social 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://www.facebook.com">Facebook</a>
+      <a href="http://www.Twitter.com">Twitter</a>
+      <a href="http://www.instagram.com">Instagram</a>
+    </div>
+  </div> 
+  <a href="../Sort/Sort.html">Sort</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    <div>
+    <form action="" method="post">
+        <label for="firstname">Firstname</label>
+        <input name="firstname" type="text" id="firstname"/><br>
+        <label for="lastname">Lastname</label>
+        <input name="lastname" type="text" id="lastname"/> <br>
+        <label for="age">Age</label>
+        <input max="99" min="1" name="age" step="1" type="number" id="age"/><br>
+        <label for="favoritesport">Favorite Sport</label>
+        <select name="favoritesport" id="favoritesport">
+            <option>Baseball</option>
+            <option>Basketball</option>
+            <option>Football</option>
+            <option>Hockey</option>
+            <option>Soccer</option>
+            <option>Tennis</option>
+        </select><br>
+        <p>Pizza Toppings</p>
+        <input type="checkbox" name="toppings" value="Bacon" id="toppings">Bacon<br>
+        <input type="checkbox" name="toppings" value="Hamburger">Hamburger<br>
+        <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pineapples">Pineapples<br>
+        <input type="checkbox" name="toppings" value="Sausage">Sausage<br>
+        <input type="checkbox" name="toppings" value="Spinach">Spinach<br>
+        <input type="submit" value="Save"/><br>
+      </form>
+      </div>
+  <footer>
+        <p>©Copyright 2019 <a href="http://www.facebook.com">Facebook</a> <a href="http://www.Twitter.com">Twitter</a> <a href="http://www.instagram.com">Instagram</a></p>
+  </footer>
+  </body>
+</html>
