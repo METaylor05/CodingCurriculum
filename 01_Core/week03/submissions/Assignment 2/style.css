@@ -1,0 +1,33 @@
+div 
+{
+    display: inline-block;
+}
+
+.align
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+
+
+.square1 
+{
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  background-color: blue;
+}
+
+.square2 
+{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin-left: 142px;
+  transform: translate(0px, -347px) rotate(45deg);
+  
+}
+
+

@@ -1,0 +1,60 @@
+
+.align
+{
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.square
+{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+}
+
+.alpha1
+{
+   opacity: 0.3;
+}
+
+.alpha2
+{
+    opacity: 0.7;
+}
+
+.red 
+{
+  display: inline-block;
+  background-color: red;
+}
+
+.orange
+{
+  display: inline-block;
+  background-color: orange;
+}
+
+.yellow
+{
+  display: inline-block;
+  background-color: yellow;
+}
+
+.blue
+{
+  display: inline-block;
+  background-color: blue;
+}
+
+.violet
+{
+  display: inline-block;
+  background-color: violet;
+  
+}
+
+
+
+
