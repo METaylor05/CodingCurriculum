@@ -10,59 +10,43 @@ slidesArray[2] = mainSlide2;
 
 
 
-/************************************Function to move slide forward*********************************/ 
-function slideNext () 
-{
-    console.log(slidesArray);
-    
-    if (slideNumber == 0)
-        {
-            slideNumber = slideNumber + 1;
-            mainSlide0.classList.toggle("show");
-            mainSlide1.classList.toggle("show");
-            console.log(slidesArray);
-            
-        }
-    else if (slideNumber == 1)
-        {
-            slideNumber = slideNumber + 1;
-            mainSlide1.classList.toggle("show");
-            mainSlide2.classList.toggle("show");
-        }
-    
-    else if (slideNumber == 2)
-        {
-            slideNumber = 0;
-            mainSlide2.classList.toggle("show");
-            mainSlide0.classList.toggle("show");
-        }
-    
-    
+/************************************Function to move slide forward*********************************/
+function slideNext() {
+
+
+    if (slideNumber == 0) {
+        slideNumber = slideNumber + 1;
+        mainSlide0.classList.toggle("show");
+        mainSlide1.classList.toggle("show");
+
+
+    } else if (slideNumber == 1) {
+        slideNumber = slideNumber + 1;
+        mainSlide1.classList.toggle("show");
+        mainSlide2.classList.toggle("show");
+    } else if (slideNumber == 2) {
+        slideNumber = 0;
+        mainSlide2.classList.toggle("show");
+        mainSlide0.classList.toggle("show");
+    }
+
+
 }
 
-/************************************Function to move slide Backward*********************************/ 
-function slideBefore ()
-{
-    if (slideNumber == 2)
-        {
-            slideNumber = slideNumber - 1;
-            mainSlide2.classList.toggle("show");
-            mainSlide1.classList.toggle("show");
-            
-        }
-    
-    else if (slideNumber == 1)
-        {
-            slideNumber = slideNumber - 1;
-            mainSlide1.classList.toggle("show");
-            mainSlide0.classList.toggle("show");
-        }
-    
-    else if (slideNumber == 0)
-        {
-            slideNumber = 2;
-            mainSlide0.classList.toggle("show");
-            mainSlide2.classList.toggle("show");
-        }
-}
+/************************************Function to move slide Backward*********************************/
+function slideBefore() {
+    if (slideNumber == 2) {
+        slideNumber = slideNumber - 1;
+        mainSlide2.classList.toggle("show");
+        mainSlide1.classList.toggle("show");
 
+    } else if (slideNumber == 1) {
+        slideNumber = slideNumber - 1;
+        mainSlide1.classList.toggle("show");
+        mainSlide0.classList.toggle("show");
+    } else if (slideNumber == 0) {
+        slideNumber = 2;
+        mainSlide0.classList.toggle("show");
+        mainSlide2.classList.toggle("show");
+    }
+}
