@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="header">
+                <a href="../index.html" class="logo">AllGeekAccess</a>
+                <div class="header-right">
+                    <a class="active" href="../index.html">Home</a>
+                    <a href="#">Search</a>
+                    <a href="../products/products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="headingH2">
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us to let us know how we're doing</p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="../images/Products/contact2.jpg" alt="contact picture" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <form id="myForm" onsubmit="postContact();return false">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="FIRST_NAME" pattern="[A-Za-z]{2,}" placeholder="Your first name here letters only.." required>
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="LAST_NAME" pattern="[A-Za-z]{2,}" placeholder="Your last name here letters only.." required>
+                            <label for="PhoneN">Phone Number</label><br>
+                            <input type="number" id="PhoneN" name="PHONE" placeholder="Phone Number" required><br>
+                            <label for="Email">Email</label><br>
+                            <input type="email" id="Email" name="EMAIL" placeholder="Your Email Address.." required><br>
+                            <label for="PCM">What is your preferred contact method?</label><br>
+                            <input type="radio" id="PCM" name="PCM" value="P">Phone<br>
+                            <input type="radio" name="PCM" value="E">Email<br>
+                            <label for="HDUHAU">How did you hear about us?</label><br>
+                            <input type="checkbox" id="HDUHAU" name="HDUHAU" value="TV">TV<br>
+                            <input type="checkbox" name="HDUHAU" value="RA">Radio<br>
+                            <input type="checkbox" name="HDUHAU" value="SM">Social Media<br>
+                            <input type="checkbox" name="HDUHAU" value="OT">Other<br>
+                            <label for="Comments">Comments</label>
+                            <textarea id="Comments" name="COMMENTS" placeholder="Your Feedback.." style="height:170px"></textarea>
+                            <input type="Submit" value="Submit">
+                        </form>
+                        <script src="contactscript.js"></script>
+                        
+                    </div>
+                </div>
+            </div>
+            <footer class="footer-content">
+                <div class="footer-menu-left">
+                        <a href="../index.html">Home</a>
+                        <a href="#">Search</a>
+                        <a href="../products/products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">Cart</a>
+                </div>
+                <div class="footer-menu-center">
+                    <p>Copyright 2019 ©AllGeekAccess.com<br> is a subsidiary of MalcolmTaylor.io</p>
+                </div>
+                <div class="footer-icons">
+                        <a href="https://www.facebook.com" target="_blank"><img src="../images/icon-facebook.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="../images/icon-twitter.png" alt="twitter"></a>
+                        <a href="http://www.instagram.com" target="_blank"><img src="../images/icon-instagram.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com" target="_blank"><img src="../images/icon-youtube.png" alt="youtube"></a>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="../images/icon-linkedin.png" alt="linkedin"></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/************************************All HTML for page goes inside this Div**************************************/
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+.headingH1 {
+    color: white;
+    font-size: 3.5em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pName {
+    color: white;
+}
+
+
+/************************************************************************Header section************************************************/
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: rgb(255, 94, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.header-right {
+    float: right;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+/********************************************************Button*********************************************/
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(255, 94, 0);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  align-content: center;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(255, 94, 0);
+  opacity: 0.7;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(11, 11, 11);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links in dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Color change on hover*/
+.dropdown-content a:hover {background-color: rgb(255, 94, 0);}
+
+
+.show {display:block;}
+
+
+/***********************************************************************Products************************************************************************/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(184, 183, 183, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.item-Desc {
+    color: white;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(255, 94, 0);
+    ;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+/*************************************************************Footer******************************************************/
+
+
+
+
+.footer-content
+{
+    background: #000000;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+.footer-menu-center {
+    display: inline-block;
+    place-self: center;
+    
+
+
+}
+
+.footer-menu-center p {
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    place-self: center;
+    
+
+}
+
+.footer-menu-left { 
+    
+    float: left;
+    place-self: center;
+}
+
+.footer-menu-left a {
+    display: inline-block;
+    font-family: 'Saira Condensed', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(255, 94, 0);
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 2px;
+    
+}
+
+.footer-icons
+{
+    float: right;
+    place-self: center;
+}
+
+.footer-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/**************************************************Media Queries*************************************/
+
+@media screen and (max-width: 800px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 50% 25%;
+    }
+}

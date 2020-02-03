@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:300,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AllGeekAccess</title>
+
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="header">
+                <a href="index.html" class="logo">AllGeekAccess</a>
+                <div class="header-right">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="#">Search</a>
+                    <a href="products/products.html">Products</a>
+                    <a href="contact/contact.html">Contact</a>
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="content">
+                    AllGeekAccess
+                </h1>
+                <div class="video-container">
+                    <video autoplay muted loop>
+                    <source src="videos/HudBG.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="main-content">
+                <hr>
+                <h2 class="headingH2">Welcome to AllGeekAccess.com</h2>
+                <p class="text">Here you will find guides and products that will help take your home network to the next level. Whether you're looking for how-to's on setting up your network, trying to understanding the workings behind the scenes of a typical network,
+                    wanting to optimize your network for gaming or business, or just simple just wanting to get the fastest and most reliable connection we have the tools that will help you understand, setup, and troubleshoot your home network.
+                </p>
+                <hr class="hr">
+                <h3 class="headingH3"><a href="products/products.html">Featured Products</a></h3>
+
+            </div>
+            <!--Slide Show-->
+            <div class="carousel-container">
+                <div class="button-left" onclick="slideBefore()">
+                    <button onclick="">prev</button>
+                </div>
+                <div class="carousel">
+                    <a href="products/products.html"><img src="" alt="router" id="4" class="slide-1 show"></a>
+                    <a href="products/products.html"><img src="" alt="router" id="5" class="slide-2"></a>
+                    <a href="products/products.html"><img src="" alt="router" id="6" class="slide-3"></a>
+                    </div>
+                <div class="button-right" onclick="slideNext()">
+                    <button onclick="">next</button>
+                </div>
+            </div>
+            <!--Footer-->
+            <footer class="footer-content">
+                    <div class="footer-menu-left">
+                            <a href="index.html">Home</a>
+                            <a href="#">Search</a>
+                            <a href="products/products.html">Products</a>
+                            <a href="contact/contact.html">Contact</a>
+                            <a href="#">Cart</a>
+                    </div>
+                    <div class="footer-menu-center">
+                        <p>Copyright 2019 ©AllGeekAccess.com<br> is a subsidiary of MalcolmTaylor.io</p>
+                    </div>
+                    <div class="footer-icons">
+                            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="facebook"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="twitter"></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.png" alt="instagram"></a>
+                            <a href="https://www.youtube.com" target="_blank"><img src="images/icon-youtube.png" alt="youtube"></a>
+                            <a href="https://www.linkedin.com" target="_blank"><img src="images/icon-linkedin.png" alt="linkedin"></a>
+                    </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
